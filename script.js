@@ -11,9 +11,12 @@ function adicionarTask() {
         concluida: false
     });
 
-    input.value = "";
-
-    mostrarTarefas();
+    if(input.value === "") {
+        alert("[ERROR]")
+    } else {
+        input.value = "";
+        mostrarTarefas();
+    }
 
 };
 
